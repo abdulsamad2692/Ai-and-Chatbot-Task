@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 14</title>
+</head>
+<input type="string" id="string" placeholder="Enter">
+<br>
+<button onclick="titleCase()">Check!</button>
+
+<body>
+    <script>
+        function titleCase() {
+            var a = document.getElementById("string").value
+            var splitStr = a.toLowerCase().split(' ');
+            for (var i = 0; i < splitStr.length; i++) {
+                // You do not need to check if i is larger than splitStr length, as your for does that for you
+                // Assign it back to the array
+                splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+            }
+            // Directly return the joined string
+            return splitStr.join(' ');
+            document.getElementById("p").innerHTML = `${a}`
+        }
+      
+    </script>
+</body>
+<p id="p"></p>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <i>
+        <h1>Current DATE And TIME</h1>
+    </i>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        var today = new Date();
+        var day = today.getDay();
+        var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+        var hours = today.getHours();
+        var min = today.getMinutes();
+        var sec = today.getSeconds();
+        var check = (hours >= 12) ? " PM " : " AM ";
+        var res = "Current time: " + hours + check + " : " + min + " : " + sec;
+        document.getElementById("p1").innerHTML = res;
+        document.getElementById("p2").innerHTML = " Current Day: " + daylist[day];
+
+    </script>
+</body>
+
+</html>

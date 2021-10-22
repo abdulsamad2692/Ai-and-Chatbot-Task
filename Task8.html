@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+</head>
+
+<body>
+    <script>
+        today = new Date();
+        xmas = new Date("Auguest 14, 2022");
+        msPerDay = 24 * 60 * 60 * 1000;
+        timeLeft = (xmas.getTime() - today.getTime());
+        e_daysLeft = timeLeft / msPerDay;
+        daysLeft = Math.floor(e_daysLeft);
+        document.write(" There are only <b> " + daysLeft + " </b> days until  next Auguest 14th 2022");
+    </script>
+</body>
+
+</html>

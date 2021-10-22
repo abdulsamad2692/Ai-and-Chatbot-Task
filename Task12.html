@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="Number1" placeholder="Enter the Number">
+    <br>
+    <button onclick="myfunction()">Check</button>
+   
+    <script>
+        function myfunction(Number1) {
+            if ((Math.abs(100 - Number1) <= 20) || (Math.abs(400 - Number1) <= 20));
+            document.getElementById("C").innerHTML = `${Number1}`
+        }
+    </script>
+    <p id="C" ></p>
+</body>
+
+</html>
